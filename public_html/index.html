@@ -2,21 +2,25 @@
 
 <html>
     <head>
-        <title>Test application by Buranzo</title>
+        <title>Test application by ShtykovPB aka Buranzo</title>
         <meta charset="UTF-8">
-        <script src="js/welcome.js">
+        <script src="js/table.js">
         </script>
     </head>
     <body>
-        <div id="welcomeBlock">Введите какой-нить текст
-            <br>
-            <input type="text" id="inputText">
-            <input type="button" id="inputButton" value="жамкнуть" onClick>
+        <div id="welcomeBlock">
+            <hr width = '100%'>
             <p>
-            Результат
-            <br>
-            <input type="text" id="inputText">
-
+                Количество столбцов
+                <br>
+                <input type="text" id="cols">
+                <br>
+                Количество строк
+                <br>
+                <input type="text" id="rows">
+            </p>
+            <hr width = '100%'>
+            <input type="button" id="createTableButton" value="создать" onclick="fillTable(cols.value, rows.value)">
         </div>
     </body>
 </html>
