@@ -2,20 +2,24 @@
 
 <html>
     <head>
-        <title>Test application by Buranzo</title>
+        <title>Test application by ShtykovPB aka Buranzo</title>
         <meta charset="UTF-8">
         <script src="js/welcome.js">
         </script>
     </head>
     <body>
-        <div id="welcomeBlock">Введите какой-нить текст
-            <br>
-            <input type="text" id="inputText">
-            <input type="button" id="inputButton" value="жамкнуть" onClick>
+        <div id="welcomeBlock">
             <p>
-            Результат
+            Количество столбцов
             <br>
-            <input type="text" id="inputText">
+            <input type="text" id="cols">
+            <br>
+            Количество строк
+            <br>
+            <input type="text" id="rows">
+            </p>
+            <input type="button" id="inputButton" value="жамкнуть" onclick="test(cols.value, rows.value)">
+
 
         </div>
     </body>
