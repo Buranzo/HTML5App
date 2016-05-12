@@ -1,20 +1,44 @@
-window.onload = welcome;
-
-function welcome() {
-    var welcomeElement = document.getElementById('welcomeText');
-    welcomeElement.value = 'welcome';
-    alert('start script change method: ' + welcomeElement.value);
+function headerDocument() {
+    document.write("<html>");
+    document.write("<head>");
+    document.write("<title>Table page</title>");
+    document.write("<meta charset = 'UTF - 8'>");
+    document.write("</head>");
+    document.write("<body>");
 }
 
-function test(cols, rows) {
-//    rows = 3;
-//    cols = 3;
+function createTable() {
+    document.write("<h2>Таблица, сгенерированная в JS.</h2>");
+    document.write("<table width = '100%' border = '1'>");
+    document.write("<tr>");
+}
+
+function fillTable(cols, rows) {
+    if (cols < 1) {
+        cols = 1;
+    }
+    if (rows < 1) {
+        rows = 1;
+    }
+    headerDocument();
+    createTable();
     for (row = 0; row < rows; row++) {
         for (col = 0; col < cols; col++) {
-            document.write("col: " + col + " |   row: " + row);
-            document.write("<br>")
+            document.write("<td align = 'center'>");
+            document.write(" столбец:" + (col + 1) + " / строка:" + (row + 1));
+            document.write("</td>");
         }
-        document.write("<br>")
-        document.write("<br>")
+        document.write("</tr><tr>")
     }
+    closeTable();
+    footerDocument();
+}
+
+function closeTable() {
+    document.write("</table>");
+}
+
+function footerDocument() {
+    document.write("</body>");
+    document.write("</html>");
 }

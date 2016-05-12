@@ -4,23 +4,23 @@
     <head>
         <title>Test application by ShtykovPB aka Buranzo</title>
         <meta charset="UTF-8">
-        <script src="js/welcome.js">
+        <script src="js/table.js">
         </script>
     </head>
     <body>
         <div id="welcomeBlock">
+            <hr width = '100%'>
             <p>
-            Количество столбцов
-            <br>
-            <input type="text" id="cols">
-            <br>
-            Количество строк
-            <br>
-            <input type="text" id="rows">
+                Количество столбцов
+                <br>
+                <input type="text" id="cols">
+                <br>
+                Количество строк
+                <br>
+                <input type="text" id="rows">
             </p>
-            <input type="button" id="inputButton" value="жамкнуть" onclick="test(cols.value, rows.value)">
-
-
+            <hr width = '100%'>
+            <input type="button" id="createTableButton" value="создать" onclick="fillTable(cols.value, rows.value)">
         </div>
     </body>
 </html>
