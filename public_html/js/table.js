@@ -2,17 +2,17 @@ window.onload = welcome;
 
 function welcome() {
     var welcomeElement = document.getElementById('welcomeText');
-    welcomeElement.innerHTML = "<h2>Здравствуйте.</h2>";
+    welcomeElement.innerHTML = "Здравствуйте.";
 }
 
 
 function textForTable() {
     var welcomeElement = document.getElementById('welcomeText');
-    welcomeElement.innerHTML = "<h2>Таблица, сгенерированная в JS.</h2>";
+    welcomeElement.innerHTML = "Таблица, сгенерированная в JS.";
 }
 function createTable() {
     var source = "";
-    source += "<table width = '100%' border = '1'>";
+    source += "<table width = '100%'>";
     source += "<tr>";
     return source;
 }
