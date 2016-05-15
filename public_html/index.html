@@ -4,12 +4,14 @@
     <head>
         <title>Test application by ShtykovPB aka Buranzo</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/front.css">
         <script src="js/table.js">
         </script>
     </head>
     <body>
-        <div id="welcomeBlock">
+        <div id="welcomeBlock" class="welcomeBlock">
             <hr width = '100%'>
+            <div id="welcomeText" class="welcomeText"></div>
             <p>
                 Количество столбцов
                 <br>
@@ -19,8 +21,8 @@
                 <br>
                 <input type="text" id="rows">
             </p>
-            <hr width = '100%'>
             <input type="button" id="createTableButton" value="создать" onclick="fillTable(cols.value, rows.value)">
         </div>
+        <div id="table"></div>
     </body>
 </html>
